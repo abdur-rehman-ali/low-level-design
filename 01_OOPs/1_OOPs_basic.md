@@ -9,7 +9,8 @@ A comprehensive Q&A reference for Python OOP concepts with code examples.
 2. [Classes and Objects?](#2-what-are-classes-and-objects)
 3. [Benefits of using Classes and Objects?](#3-benefits-of-using-classes-and-objects)
 4. [Instance and Class Variables?](#4-instance-vs-classstatic-variables)
-4. [Instance V/S Class V/S Static methods?](#5-instance-vs-class-vs-static-methods)
+5. [Instance V/S Class V/S Static methods?](#5-instance-vs-class-vs-static-methods)
+6. [Encapsulation](#6-encapsulation)
 
 ## 1. What is OOP?
 
@@ -116,3 +117,30 @@ print(f"Total Customers: {Customer.total_customers}")
 | **Use case** | Operations on instance data | Factory methods, modifying class state | Utility functions, grouping related functions |
  
 ---
+
+
+## 6. Encapsulation
+
+**Q: What is encapsulation? Key Characteristics of encapsulation? What are access modifiers?**
+
+**A:**
+
+Encapsulation is a fundamental Object-Oriented Programming (OOP) concept that bundles data (attributes) and methods that operate on that data within a single unit (class), while restricting direct access to some of an object's components
+
+
+**Key Characteristics of Encapsulation:**
+
+- **Data Hiding:** Prevent direct access to internal data
+- **Controlled Access:** Provide public methods to access/modify private data
+- **Protection:** Prevent accidental or unauthorized modification
+- **Abstraction:** Hide complex implementation details
+
+
+Python uses naming conventions:
+
+| Convention | Prefix | Meaning |
+|---|---|---|
+| Public | `name` | Accessible anywhere |
+| Protected | `_name` | Convention — don't access outside class/subclasses |
+| Private | `__name` | Name-mangled — harder to access externally |
+
