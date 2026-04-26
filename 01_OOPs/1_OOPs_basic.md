@@ -11,6 +11,7 @@ A comprehensive Q&A reference for Python OOP concepts with code examples.
 4. [Instance and Class Variables?](#4-instance-vs-classstatic-variables)
 5. [Instance V/S Class V/S Static methods?](#5-instance-vs-class-vs-static-methods)
 6. [Encapsulation](#6-encapsulation)
+7. [Inheritance](#7-inheritancef)
 
 ## 1. What is OOP?
 
@@ -65,6 +66,8 @@ person1.greet()
 - **Modularity:** Break complex systems into manageable pieces
 - **Inheritance:** Create hierarchies and reuse code
 
+---
+
 ## 4. Instance vs Class/Static Variables
 
 **Q: What are the differences between instance and class/static variables?**
@@ -98,6 +101,7 @@ customer4 = Customer("Diana", "diana@mailinator.com")
 
 print(f"Total Customers: {Customer.total_customers}")
 ```
+---
 
 
 ## 5. Instance vs Class vs Static Methods
@@ -144,3 +148,20 @@ Python uses naming conventions:
 | Protected | `_name` | Convention — don't access outside class/subclasses |
 | Private | `__name` | Name-mangled — harder to access externally |
 
+---
+
+## 7. Inheritance
+
+**Q: What is inheritance and why use inheritance?**
+
+**A:** 
+
+Inheritance is an Object-Oriented Programming concept where a class (child/derived class) inherits attributes and methods from another class (parent/base class). It represents an "is-a" relationship and promotes code reuse.
+
+**Why Use Inheritance?**
+- **Code Reusability:** Don't repeat yourself - reuse parent class code
+- **Hierarchical Classification:** Model real-world relationships
+- **Method Overriding:** Customize inherited behavior
+- **Extensibility:** Add new features without modifying existing code
+
+---
