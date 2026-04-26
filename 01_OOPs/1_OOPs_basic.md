@@ -7,7 +7,8 @@ A comprehensive Q&A reference for Python OOP concepts with code examples.
 ## Table of Contents
 1. [What is OOP?](#1-what-is-oop)
 2. [Classes and Objects?](#2-what-are-classes-and-objects)
-3. [Instance and Class Variables?](#3-instance-vs-classstatic-variabless)
+3. [Benefits of using Classes and Objects?](#3-benefits-of-using-classes-and-objects)
+4. [Instance and Class Variables?](#4-instance-vs-classstatic-variables)
 
 
 ## 1. What is OOP?
@@ -51,8 +52,19 @@ person1 = Person("Alice", 20)
 person1.greet()
 ```
 
+## 3. Benefits of Using Classes and Objects
 
-## 3. Instance vs Class/Static Variables
+**Q: What are Benefits of Using Classes and Objects**
+
+**A:**
+
+- **Organization:** Group related data and functions together
+- **Reusability:** Create multiple objects from one class
+- **Encapsulation:** Hide internal details and protect data
+- **Modularity:** Break complex systems into manageable pieces
+- **Inheritance:** Create hierarchies and reuse code
+
+## 4. Instance vs Class/Static Variables
 
 **Q: What are the differences between instance and class/static variables?**
 
