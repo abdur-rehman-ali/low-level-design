@@ -6,7 +6,8 @@ A comprehensive Q&A reference for Python OOP concepts with code examples.
 
 ## Table of Contents
 1. [What is OOP?](#1-what-is-oop)
-1. [Classes and Objects?](#2-what-are-classes-and-objects)
+2. [Classes and Objects?](#2-what-are-classes-and-objects)
+3. [Instance and Class Variables?](#3-instance-vs-classstatic-variabless)
 
 
 ## 1. What is OOP?
