@@ -9,7 +9,7 @@ A comprehensive Q&A reference for Python OOP concepts with code examples.
 2. [Classes and Objects?](#2-what-are-classes-and-objects)
 3. [Benefits of using Classes and Objects?](#3-benefits-of-using-classes-and-objects)
 4. [Instance and Class Variables?](#4-instance-vs-classstatic-variables)
-
+4. [Instance V/S Class V/S Static methods?](#5-instance-vs-class-vs-static-methods)
 
 ## 1. What is OOP?
 
@@ -97,3 +97,22 @@ customer4 = Customer("Diana", "diana@mailinator.com")
 
 print(f"Total Customers: {Customer.total_customers}")
 ```
+
+
+## 5. Instance vs Class vs Static Methods
+
+**Q: What are the differences between Instance , Class and Static Methods**
+
+**A:**
+ 
+| Feature | Instance Method | Class Method | Static Method 
+|---------|-----------------|--------------|---------------
+| **Decorator** | None | `@classmethod` | `@staticmethod` 
+| **First parameter** | `self` | `cls` | None |
+| **Can access instance attributes** | ✅ Yes | ❌ No | ❌ No |
+| **Can access class attributes** | ✅ Yes (via `self.__class__`) | ✅ Yes (via `cls`) | ❌ No (would need class name) | 
+| **Can modify class state** | ✅ Yes (via `self.__class__`) | ✅ Yes (via `cls`) | ❌ No |
+| **Called on** | Instance | Class or instance | Class or instance |
+| **Use case** | Operations on instance data | Factory methods, modifying class state | Utility functions, grouping related functions |
+ 
+---

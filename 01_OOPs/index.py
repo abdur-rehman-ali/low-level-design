@@ -41,5 +41,41 @@ customer3 = Customer("Charlie", "charlie@mailinator.com")
 customer4 = Customer("Diana", "diana@mailinator.com")
 
 print(f"Total Customers: {Customer.total_customers}")
+print("-" * 50)
 ########################################################################################################
 
+class Employee:
+    company = "Tech Corp"
+
+    def __init__(self, name, position):
+        self.name = name
+        self.position = position
+    
+    def display_info(self):
+        print(f"Employee Name: {self.name}")
+        print(f"Position: {self.position}")
+        print(f"Company: {Employee.company}")
+
+    def change_company_instance(self, new_company):
+        self.__class__.company = new_company
+    
+    @classmethod
+    def change_company(cls, new_company):
+        cls.company = new_company
+
+    @staticmethod
+    def print_hello():
+        print("Hello from the Employee class!")
+    
+    def __str__(self):
+        return f"{self.name} - {self.position} at {Employee.company}"
+
+
+employee1 = Employee("Eve", "Software Engineer")
+employee1.display_info()
+Employee.change_company("New Tech Corp")
+employee1.display_info()
+Employee.print_hello()
+employee1.print_hello()
+employee1.change_company_instance("Another Tech Corp")
+employee1.display_info()
