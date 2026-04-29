@@ -100,3 +100,24 @@ print(context.do_something("data"))  # Strategy B processing data
 - The number of strategies is very small and stable.
 - The algorithms are tightly coupled to the context's data (consider Template Method instead).
 ---
+
+ 
+## Comparison with Related Patterns
+ 
+| Pattern | Intent |
+|---|---|
+| **Strategy** | Interchangeable algorithms; chosen at runtime. |
+| **Template Method** | Fixed algorithm skeleton; subclasses fill in the steps. |
+| **State** | Object changes behavior based on internal state; strategies usually don't track state. |
+| **Command** | Encapsulates a request/action; Strategy encapsulates an algorithm. |
+| **Decorator** | Adds behavior on top; Strategy replaces behavior entirely. |
+ 
+---
+ 
+## Summary
+ 
+The Strategy pattern is one of the most practical patterns in everyday software development. It shines whenever you have **multiple ways to do something** and want to keep your code clean, extensible, and easy to test. Python makes it especially ergonomic — you can use full class hierarchies for complex cases or simple callables for lightweight scenarios.
+ 
+> **Rule of thumb:** If you're writing a long `if/elif` to choose between algorithms or behaviors, the Strategy pattern is probably the right fix.
+ 
+ 
